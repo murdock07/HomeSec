@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace HSClient
+namespace HSServer
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace HSClient
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormClient());
+            Application.Run(new FormServer());
         }
     }
 }
