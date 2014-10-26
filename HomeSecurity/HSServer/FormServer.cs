@@ -31,12 +31,20 @@ namespace HSServer
         {
             List<IPAddress> addresses=  Dns.GetHostAddresses(Dns.GetHostName()).ToList();
             _serverAddress = addresses[2];
+            _serverAddress.Address = addresses[2].Address;
             //_serverPortNumber = ;
 
             _serverStatus = StatusType.Offline;
             _connectedClients = 0;
             _numberOfFiles = 0;
             _sizeOfFiles = 0;
+
+            ServerLog.Write(ref richTextBoxLogWindow,"");
+        }
+
+        private void ShowValues()
+        {
+
         }
     }
 }

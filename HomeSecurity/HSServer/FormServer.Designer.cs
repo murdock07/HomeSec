@@ -48,6 +48,7 @@
             this.labelDataSize = new System.Windows.Forms.Label();
             this.textBoxFileNumber = new System.Windows.Forms.TextBox();
             this.labelData = new System.Windows.Forms.Label();
+            this.richTextBoxLogWindow = new System.Windows.Forms.RichTextBox();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -147,7 +148,7 @@
             this.listBoxData.FormattingEnabled = true;
             this.listBoxData.Location = new System.Drawing.Point(418, 36);
             this.listBoxData.Name = "listBoxData";
-            this.listBoxData.Size = new System.Drawing.Size(227, 251);
+            this.listBoxData.Size = new System.Drawing.Size(227, 446);
             this.listBoxData.TabIndex = 14;
             // 
             // comboBoxTypeOfData
@@ -163,7 +164,7 @@
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripProgressBar,
             this.toolStripProgressName});
-            this.statusStrip.Location = new System.Drawing.Point(0, 300);
+            this.statusStrip.Location = new System.Drawing.Point(0, 503);
             this.statusStrip.Name = "statusStrip";
             this.statusStrip.Size = new System.Drawing.Size(658, 22);
             this.statusStrip.TabIndex = 17;
@@ -212,11 +213,20 @@
             this.labelData.TabIndex = 18;
             this.labelData.Text = "Number of files";
             // 
+            // richTextBoxLogWindow
+            // 
+            this.richTextBoxLogWindow.Location = new System.Drawing.Point(16, 294);
+            this.richTextBoxLogWindow.Name = "richTextBoxLogWindow";
+            this.richTextBoxLogWindow.Size = new System.Drawing.Size(366, 188);
+            this.richTextBoxLogWindow.TabIndex = 22;
+            this.richTextBoxLogWindow.Text = "";
+            // 
             // FormServer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(658, 322);
+            this.ClientSize = new System.Drawing.Size(658, 525);
+            this.Controls.Add(this.richTextBoxLogWindow);
             this.Controls.Add(this.textBoxFileSize);
             this.Controls.Add(this.labelDataSize);
             this.Controls.Add(this.textBoxFileNumber);
@@ -266,6 +276,7 @@
         private System.Windows.Forms.Label labelDataSize;
         private System.Windows.Forms.TextBox textBoxFileNumber;
         private System.Windows.Forms.Label labelData;
+        private System.Windows.Forms.RichTextBox richTextBoxLogWindow;
     }
 }
 
